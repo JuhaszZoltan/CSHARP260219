@@ -62,7 +62,7 @@ var f11 = ajanlatok.MinBy(a => a.Ar);
 Console.WriteLine($"legolcsobb utazas:\n{f11}");
 
 var f12 = ajanlatok.Where(a => a.Ejszaka == ajanlatok.Max(a => a.Ejszaka));
-Console.WriteLine($"legtobb eltoltott ejszakaval megegyezo szamu ejszakara foglalt lehetosegek szama: {f12.Count()}");
+Console.WriteLine($"legtobb eltoltott ejszakaval megegyezo szamu ejszakara foglhato utazasok szama: {f12.Count()}");
 Console.WriteLine($"az 'elso' ilyen ut celja: {f12.First().Tajegyseg}");
 
 
